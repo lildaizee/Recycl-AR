@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+<Tracking>
+<ModelTarget name="BottleCAD" motionHint="adaptive" trackingMode="car" optimizeTrackingFor="default"/>
+
+</Tracking>
+
+<Assembly name="BottleCADs_assembly" assemblyId="4ff44bdeacb041fd938b68527c6dabad">
+<Part name="BottleCAD" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="-9.10414e-06 0.0626751 0.225989" rotation="AD: 0.999851 0.0453665 -0.414129 191.548" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARConfig>
