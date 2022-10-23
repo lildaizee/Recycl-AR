@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<QCARInfo>
+    <TargetSet version="36.0" toolVersion="v5.6.0-5-gac3b8f3">
+        <ModelTarget name="Coffee_cup_and_saucer" targetId="03247336d8204bf9898be8f80dc9f0e3" version="13.0" toolVersion="v5.6.0-5-gac3b8f3" bbox="-0.660838 -0.660838 -0.000645 0.660838 0.660838 0.575397" trackingMode="default" upVector="0.0 0.0 1.0" optimizeTrackingFor="default" realisticTextures="no" />
+    </TargetSet>
+    <Assembly name="Coffee_cup_and_saucer" assemblyId="737c972557294792b44728851262c0d8">
+        <Part name="Coffee_cup_and_saucer" translation="0 0 0" rotation="AD: 0 0 1 0" />
+        <EntryPoint name="(none)" trained="yes" />
+    </Assembly>
+</QCARInfo>
