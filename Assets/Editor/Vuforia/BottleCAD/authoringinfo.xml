@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARInfo>
+<TargetSet version="27.0" toolVersion="10.10.2">
+<ModelTarget name="BottleCAD" targetId="d3a3cf34495945639e27ccf3db22c2a1" version="14.0" toolVersion="10.10.2" bbox="-0.019413 0.001346 -0.019356 0.019405 0.127048 0.019339" previewImage="d3a3cf34495945639e27ccf3db22c2a1_preview.jpg"/>
+
+</TargetSet>
+
+<Assembly name="BottleCADs_assembly" assemblyId="4ff44bdeacb041fd938b68527c6dabad">
+<Part name="BottleCAD" translation="0 0 0" rotation="AD: 0 0 1 0"/>
+<EntryPoint name="GuideView_0000" translation="-9.10414e-06 0.0626751 0.225989" rotation="AD: 0.999851 0.0453665 -0.414129 191.548" image="BottleCAD_GuideView_0000.png" trained="no">
+
+</EntryPoint>
+
+</Assembly>
+
+</QCARInfo>
