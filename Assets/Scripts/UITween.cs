@@ -12,7 +12,7 @@ public class UITween : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        LeanTween.moveY(ImagePopup, 750f, .9f);
+        LeanTween.moveY(ImagePopup, 1000f, .9f);
         //LeanTween.scale(ImageAR, new Vector3(1f, 1f, 1f), 2f).setDelay(.5f).setEase(LeanTweenType.easeOutElastic);
         //LeanTween.moveLocal(ImageAR, new Vector3(0f, 3f, 2f), .7f).setDelay(2f).setEase(LeanTweenType.easeInOutCubic);
         //LeanTween.scale(ImageAR, new Vector3(1f, 1f, 1f), 2f).setDelay(1.7f).setEase(LeanTweenType.easeInOutCubic);
