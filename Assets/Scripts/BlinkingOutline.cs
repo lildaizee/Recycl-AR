@@ -13,7 +13,12 @@ public class BlinkingOutline : MonoBehaviour
     /// <summary>
     /// This is used by Model target's event
     /// </summary>
-    public void DoReset() => BlinkTime = 5;
+    public void DoReset()
+    {
+        BlinkTime = 5;
+        isBlinking = false;
+        StopCoroutine(DoBlinkCoroutine());
+    }
 
     public void DoBlink() {
         if (isBlinking)
