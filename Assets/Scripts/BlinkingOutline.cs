@@ -5,16 +5,25 @@ using UnityEngine;
 public class BlinkingOutline : MonoBehaviour
 {
     [SerializeField] GameObject OutlineOnCheck;
-    WaitForSeconds withTime = new WaitForSeconds(0.5f);
     [SerializeField] int BlinkTime = 5;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(DoBlink());
+    WaitForSeconds withTime = new WaitForSeconds(0.5f);
+    private bool isBlinking = false;
+
+    /// <summary>
+    /// This is used by Model target's event
+    /// </summary>
+    public void DoReset() => BlinkTime = 5;
+
+    public void DoBlink() {
+        if (isBlinking)
+            return;
+
+        StartCoroutine(DoBlinkCoroutine());
+        isBlinking = true;
     }
 
-    private IEnumerator DoBlink()
+    private IEnumerator DoBlinkCoroutine()
     {
         yield return withTime;
         OutlineOnCheck.SetActive(false);
@@ -25,16 +34,12 @@ public class BlinkingOutline : MonoBehaviour
 
         if (BlinkTime >= 0)
         {
-            yield return DoBlink();            
+            yield return DoBlinkCoroutine();            
         }
         else
         {
             OutlineOnCheck.SetActive(false);
+            isBlinking = false;
         }
-
-
     }
-    
-
-    
 }
