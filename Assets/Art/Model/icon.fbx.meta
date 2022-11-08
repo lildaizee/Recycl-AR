@@ -1,22 +1,14 @@
 fileFormatVersion: 2
-guid: 4a636e3cb5a00dd49bf95c6adb40f4ae
+guid: 9c1333578887f1747a001d04c16c9a93
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: 1827226128182048838
-    second: Take 001
+  internalIDToNameTable: []
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Bottle1
-    second: {fileID: 2100000, guid: 354dae2038be23d40b12009c2f7c0cee, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Water
-    second: {fileID: 2100000, guid: 9ac3e6c011399dd45ab5426bdf3c9d8b, type: 2}
+      name: icon
+    second: {fileID: 2100000, guid: f14c6b949e92c734888b3e514bfd63b4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
