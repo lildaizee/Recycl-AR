@@ -12,7 +12,7 @@ public class UITween : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
-        LeanTween.moveY(ImagePopup, 1000f, .9f);
+        LeanTween.moveY(ImagePopup, 800f, .9f);
         //LeanTween.scale(ImageAR, new Vector3(1f, 1f, 1f), 2f).setDelay(.5f).setEase(LeanTweenType.easeOutElastic);
         //LeanTween.moveLocal(ImageAR, new Vector3(0f, 3f, 2f), .7f).setDelay(2f).setEase(LeanTweenType.easeInOutCubic);
         //LeanTween.scale(ImageAR, new Vector3(1f, 1f, 1f), 2f).setDelay(1.7f).setEase(LeanTweenType.easeInOutCubic);
@@ -20,7 +20,7 @@ public class UITween : MonoBehaviour
 
     void InsertButton()
     {
-        LeanTween.moveX(ButtonPopup, 45f, .9f);
+        LeanTween.moveX(ButtonPopup, 100f, .9f);
     }
 
     public void OpenPanel()
