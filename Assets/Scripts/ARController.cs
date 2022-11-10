@@ -6,29 +6,35 @@ public class ARController : MonoBehaviour
 {
 
     public GameObject ARModelTarget;
+    public GameObject ScanPanel;
+    public GameObject Avatar;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void whenButtonClicked()
+    public void OpenModelTarget()
     {
         if (ARModelTarget.activeInHierarchy == true)
         {
             ARModelTarget.SetActive(false);
+            ScanPanel.SetActive(true);
+            Avatar.SetActive(true);
         }
         else
         {
             ARModelTarget.SetActive(true);
+            ScanPanel.SetActive(false);
+            Avatar.SetActive(false);
         }
     }
+    
+    //public void whenButtonClicked()
+    //{
+    //    if (ARModelTarget.activeInHierarchy == true)
+    //    {
+    //        ARModelTarget.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        ARModelTarget.SetActive(true);
+    //    }
+    //}
     
 }
