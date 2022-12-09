@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ARController : MonoBehaviour
 {
@@ -22,8 +23,11 @@ public class ARController : MonoBehaviour
             ARModelTarget.SetActive(true);
             ScanPanel.SetActive(false);
             Avatar.SetActive(false);
+            
         }
     }
+    
+    
     
     //public void whenButtonClicked()
     //{

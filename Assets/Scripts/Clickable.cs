@@ -7,37 +7,37 @@ public class Clickable : MonoBehaviour
 {
     public UnityEvent unityEvent = new UnityEvent();
 
-    private void FixedUpdate()
-    {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
-            {
-                unityEvent.Invoke();
-            }
-        }
-    }
-
-    /// <summary>
-    /// For IOS
-    /// </summary>
     //private void FixedUpdate()
     //{
-    //    if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
-    //    {
-    //        Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
-    //        RaycastHit hit;
+    //    Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+    //    RaycastHit hit;
 
+    //    if (Input.GetMouseButtonUp(0))
+    //    {
     //        if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
     //        {
     //            unityEvent.Invoke();
     //        }
     //    }
-        
     //}
+
+    /// <summary>
+    // For IOS
+    /// </summary>
+    private void FixedUpdate()
+    {
+        if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.touches[0].position);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit) && hit.collider.gameObject == gameObject)
+            {
+                unityEvent.Invoke();
+            }
+        }
+
+    }
 
     //private void FixedUpdate()
     //{
