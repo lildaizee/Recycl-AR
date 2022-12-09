@@ -21,6 +21,9 @@ public class Clickable : MonoBehaviour
     //    }
     //}
 
+    /// <summary>
+    // For IOS
+    /// </summary>
     private void FixedUpdate()
     {
         if (Input.touchCount > 0 && Input.touches[0].phase == TouchPhase.Began)
@@ -33,7 +36,7 @@ public class Clickable : MonoBehaviour
                 unityEvent.Invoke();
             }
         }
-        
+
     }
 
     //private void FixedUpdate()

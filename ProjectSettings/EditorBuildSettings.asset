@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 722021c5138912b438c831e1965dc0e2
+  - enabled: 1
+    path: Assets/Scenes/rnd_ARScene.unity
+    guid: 052e28c32d716894a850ad680cad0012
   m_configObjects: {}
