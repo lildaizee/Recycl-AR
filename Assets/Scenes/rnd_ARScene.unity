@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748171, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16716,7 +16716,7 @@ SkinnedMeshRenderer:
   - {fileID: 4530097946172600641}
   m_BlendShapeWeights:
   - 0
-  - 70
+  - 0
   - 0
   - 0
   - 0
@@ -17835,7 +17835,7 @@ MonoBehaviour:
         materialRenderer: {fileID: 0}
         materials: []
       inspFoldout: 0
-      previewDisplayMode: 1
+      previewDisplayMode: 0
       collectionExpand: 1
     trigger: 0
   - expData:
@@ -18118,7 +18118,7 @@ MonoBehaviour:
         textures: []
         materialRenderer: {fileID: 0}
         materials: []
-      inspFoldout: 0
+      inspFoldout: 1
       previewDisplayMode: 0
       collectionExpand: 0
     trigger: 0.04
@@ -18129,9 +18129,9 @@ MonoBehaviour:
   useAudioAnalysis: 1
   needAudioSource: 1
   inspStateFoldoutProcessing: 1
-  inspStateFoldoutSettings: 1
+  inspStateFoldoutSettings: 0
   inspStateFoldoutVisemes: 1
-  inspCollectionDisplayMode: 1
+  inspCollectionDisplayMode: 0
   inspAnalysisDisplay: 0
   inspOverrideSecondaryMix: 0
   inspDetailedTimingAdjustments: 0

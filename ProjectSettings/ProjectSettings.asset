@@ -783,6 +783,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
   scriptingDefineSymbols:
+    1: CMS_SALSA
     4: CMS_SALSA
   additionalCompilerArguments: {}
   platformArchitecture: {}
