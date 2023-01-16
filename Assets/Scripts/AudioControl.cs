@@ -4,46 +4,27 @@ using UnityEngine;
 
 public class AudioControl : MonoBehaviour
 {
-    public AudioSource audioSource;
-    public Animator animator;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private Animator animator;
 
-    private void Awake()
-    {
-        this.audioSource = GetComponent<AudioSource>();
-        //this.animator = GetComponent<Animator>();
-    }
+    private bool isCalling = false;
 
-    void Update()
+    public void CheckAudio()
     {
-        if (!audioSource.isPlaying)
+        if (isCalling) return;
+
+        isCalling = true;
+        StartCoroutine(CheckAudioRoutine());
+
+        IEnumerator CheckAudioRoutine()
         {
+            animator.SetBool("StopTalking", false);
+            while (audioSource.isPlaying)
+                yield return null;
+
             animator.SetBool("StopTalking", true);
+            isCalling = false;
         }
     }
 
-    //public void CallCouritine()
-    //{
-
-    //}
-
-    //IEnumerator CheckAudio(){
-
-    //yield return null
-    //if audiosource is playing, yield return null talking
-    //startcouritine check audio
-    //found check couritine
-
-    //public void GazeEntrance()
-    //{
-    //    if (this.audioSource.isPlaying)
-    //    {
-    //        this.animator.Play("Talking");
-    //        this.audioSource.Stop();
-    //    }
-    //    else
-    //    {
-    //        this.animator.Play("Standing");
-    //        this.audioSource.Play();
-    //    }
-    //}
 }
